@@ -1,0 +1,16 @@
+This is a mirror of http://www.vim.org/scripts/script.php?script_id=5229
+
+This package will, in time, provide a complete suite of functionality for editing OpenGL Shading Language (GLSL) code in Vim.
+
+Provided functionality includes:
+- syntax highlighting
+- automatic indentation
+- file type plug-in, setting options such as formatoptions and foldmethod, among others.
+
+More features will follow, such as (but not necessarily limited to) code completion.
+
+I've tested this using Vim 7.4. It should work on some earlier versions, though.
+
+For complete documentation, type ":help glsl" in Vim after installing the plug-in.
+
+The project is hosted at https://github.com/brobeson/glslVim. If you discover a bug, or want to request a feature, please create an issue at https://github.com/brobeson/glslVim/issues.
