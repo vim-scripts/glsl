@@ -6,9 +6,11 @@ This set of plugins provides functionality for editing OpenGL Shading Language
 source code in Vim.
 
 1. Syntax Highlighting                          |glsl-syntax|
+2. Automatic Indentation                        |glsl-indent|
 
 =============================================================================
 1. Syntax Highlighting                          *glsl-syntax*
+
 This plugin provides syntax highlighting for GLSL files. The syntax items were
 defined using the OpenGL Shading Language 4.50 Reference Card and doesn't
 attempt to be backward compatible. That is, anything removed from previous
@@ -186,6 +188,14 @@ glslVariable        Defaults to Identifier.
 
 glslVersion         Defaults to PreProc.
     The '#version' preprocessor directive.
+
+=============================================================================
+2. Automatic Indentation                        *glsl-indent*
+
+GLSL source code is automatically indented just like C code in Vim. In fact,
+it just uses the |'cindent'| option. Therefore, you can use other Vim
+configuration options for C indentation. See |C-indenting| for details on
+those options.
 
 vim:tw=78:ts=8:ft=help:norl:
 
