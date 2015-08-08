@@ -42,7 +42,7 @@ syntax case match
 " GLSL comments {{{
 syntax keyword	glslTodo	TODO FIXME XXX HACK BUG				contained
 syntax region	glslComment	start='//'  skip='\\$' end='$'		display keepend contains=glslTodo
-syntax region	glslComment	start='/\*'            end='\*/'	display
+syntax region	glslComment	start='/\*'            end='\*/'	display fold
 "}}}
 
 " GLSL built in constants {{{
@@ -658,6 +658,9 @@ endif
 " identifiers reserved for future use as built ins
 syntax match glslReserved 'gl_\i*' display
 " }}}
+
+" define a block of code which can be folded
+syntax region cBlock start="{" end="}" transparent fold
 
 " Define the default highlighting. {{{
 highlight default link glslBoolean			Constant
